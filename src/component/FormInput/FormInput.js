@@ -1,5 +1,6 @@
 import React from "react";
 import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
+// import {useForm} from 'react-hook-form'
 
 const FormInput = (props) => {
     // bisa juga langsung dimasukkan ke parameter props
@@ -28,6 +29,7 @@ const FormInput = (props) => {
                 {...formProps}
                 placeholder={placeholder}
                 onChange={onChange}
+                required={true}
                 style={{marginBottom: "30px"}}
                 >
             </FormControl>
